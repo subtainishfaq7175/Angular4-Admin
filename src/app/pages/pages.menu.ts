@@ -1,6 +1,7 @@
 export const PAGES_MENU = [
   {
     path: 'pages',
+
     children: [
       {
         path: 'dashboard',
@@ -336,6 +337,18 @@ export const PAGES_MENU = [
             ]
           }
         ]
+      },
+      {
+        path: 'lists',
+        data: {
+          menu: {
+            title: 'Lists',
+            icon: 'ion-android-list',
+            selected: false,
+            expanded: false,
+            order: 0,
+          },
+        },
       },
       {
         path: '',

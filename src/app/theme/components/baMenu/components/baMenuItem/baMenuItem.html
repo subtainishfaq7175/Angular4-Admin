@@ -4,18 +4,18 @@
     <i *ngIf="menuItem.icon" class="{{ menuItem.icon }}"></i><span translate>{{ menuItem.title }}</span>
   </a>
 
-  <!--// Externel link-->
+  <!-- Externel link-->
   <a *ngIf="!menuItem.children && menuItem.url" (mouseenter)="onHoverItem($event, item)" [href]="menuItem.url" [target]="menuItem.target" class="al-sidebar-list-link">
     <i *ngIf="menuItem.icon" class="{{ menuItem.icon }}"></i><span translate>{{ menuItem.title }}</span>
   </a>
 
-  <!--// all other links-->
+  <!--all other links-->
   <a *ngIf="menuItem.children" (mouseenter)="onHoverItem($event, item)" href (click)="onToggleSubMenu($event, menuItem)" class="al-sidebar-list-link">
     <i *ngIf="menuItem.icon" class="{{ menuItem.icon }}"></i><span translate>{{ menuItem.title }}</span>
     <b class="fa fa-angle-down" [ngClass]="{'fa-angle-up': menuItem.expanded}"></b>
   </a>
 
-  <!--// all sub links for all links  -->
+  <!-- all sub links for all links  -->
   <ul *ngIf="menuItem.children" class="al-sidebar-sublist" [ngClass]="{'slide-right': menuItem.slideRight}">
     <ba-menu-item [menuItem]="subItem"
                   [child]="true"

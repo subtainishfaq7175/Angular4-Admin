@@ -342,8 +342,68 @@ export const PAGES_MENU = [
         path: 'lists',
         data: {
           menu: {
-            title: 'Lists',
+            title: 'general.menu.lists',
             icon: 'ion-android-list',
+            selected: false,
+            expanded: false,
+            order: 0,
+          },
+        },
+      },
+      {
+        path: 'grids',
+        data: {
+          menu: {
+            title: 'Grid',
+            icon: 'ion-grid',
+            selected: false,
+            expanded: false,
+            order: 0,
+          },
+        },
+      },
+      {
+        path: 'dropdowns',
+        data: {
+          menu: {
+            title: 'Drop Downs',
+            icon: 'ion-android-arrow-dropdown-circle',
+            selected: false,
+            expanded: false,
+            order: 0,
+          },
+        },
+      },
+      {
+        path: 'tabs',
+        data: {
+          menu: {
+            title: 'Tabs',
+            icon: 'ion-ipad',
+            selected: false,
+            expanded: false,
+            order: 0,
+          },
+        },
+      },
+      {
+        path: 'multiselectors',
+        data: {
+          menu: {
+            title: 'Multiselectors',
+            icon: 'ion-ios-albums-outline',
+            selected: false,
+            expanded: false,
+            order: 0,
+          },
+        },
+      },
+      {
+        path: 'cards',
+        data: {
+          menu: {
+            title: 'Cards',
+            icon: 'ion-card',
             selected: false,
             expanded: false,
             order: 0,

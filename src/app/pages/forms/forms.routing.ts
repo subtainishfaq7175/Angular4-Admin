@@ -1,4 +1,4 @@
-import { Routes, RouterModule }  from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
 import { Forms } from './forms.component';
 import { Inputs } from './components/inputs/inputs.component';
@@ -11,9 +11,9 @@ const routes: Routes = [
     component: Forms,
     children: [
       { path: 'inputs', component: Inputs },
-      { path: 'layouts', component: Layouts }
-    ]
-  }
+      { path: 'layouts', component: Layouts },
+    ],
+  },
 ];
 
 export const routing = RouterModule.forChild(routes);

@@ -411,6 +411,18 @@ export const PAGES_MENU = [
         },
       },
       {
+        path: 'form',
+        data: {
+          menu: {
+            title: 'Forms',
+            icon: 'ion-compose',
+            selected: false,
+            expanded: false,
+            order: 0,
+          },
+        },
+      },
+      {
         path: '',
         data: {
           menu: {

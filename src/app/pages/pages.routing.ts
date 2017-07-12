@@ -33,6 +33,7 @@ export const routes: Routes = [
       { path: 'tabs', loadChildren: './tabs/tabs.module#TabsModule' },
       { path: 'multiselectors', loadChildren: './multiselectors/multiSelectors.module#MultiSelectorsModule' },
       { path: 'cards', loadChildren: './cards/cards.module#CardsModule' },
+      { path: 'form', loadChildren: './form/form.module#FormModule' },
     ],
   },
 ];

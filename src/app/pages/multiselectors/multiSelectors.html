@@ -1,0 +1,88 @@
+<div class="widgets">
+  <div class="row">
+    <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12"
+             title="Ratings">
+      <p>Custom rating template provided via a variable. Shows fine-grained rating display</p>
+      <p>Custom rating template provided via a variable. Shows fine-grained rating display</p>
+      <ngb-rating [(rate)]="currentRate">
+        <ng-template let-fill="fill">
+          <span class="star1" [class.filled]="fill === 100">&#9733;</span>
+        </ng-template>
+      </ngb-rating>
+        <hr>
+        <pre>Rate: <b>{{currentRate}}</b></pre>
+    </ba-card>
+
+    <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12"
+             title="Ratings">
+
+      <p>Custom rating template provided via a variable. Shows fine-grained rating display</p>
+
+      <ng-template #t let-fill="fill">
+        <span *ngIf="fill === 100" class="star full">&hearts;</span>
+        <span *ngIf="fill === 0" class="star">&hearts;</span>
+        <span *ngIf="fill < 100 && fill > 0" class="star">
+    <span class="half" [style.width.%]="fill">&hearts;</span>&hearts;
+  </span>
+      </ng-template>
+
+      <ngb-rating [(rate)]="currenRate" [starTemplate]="t" [readonly]="true" max="5"></ngb-rating>
+
+      <hr>
+      <pre>Rate: <b>{{currenRate}}</b></pre>
+      <button class="btn btn-sm btn-outline-primary" (click)="currenRate = 2">2</button>
+      <button class="btn btn-sm btn-outline-primary" (click)="currenRate = 4">4</button>
+    </ba-card>
+  </div>
+</div>
+
+<div class="widgets">
+  <div class="row">
+    <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12"
+             title="Carousel">
+        <ngb-carousel>
+          <ng-template ngbSlide>
+            <img src="https://lorempixel.com/900/500?r=1" alt="Random first slide">
+            <div class="carousel-caption">
+              <h3>First slide label</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <img src="https://lorempixel.com/900/500?r=2" alt="Random second slide">
+            <div class="carousel-caption">
+              <h3>Second slide label</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </ng-template>
+          <ng-template ngbSlide>
+            <img src="https://lorempixel.com/900/500?r=3" alt="Random third slide">
+            <div class="carousel-caption">
+              <h3>Third slide label</h3>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </ng-template>
+        </ngb-carousel>
+    </ba-card>
+
+    <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12"
+             title="Model">
+      <ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-header">
+          <h4 class="modal-title">Modal title</h4>
+          <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>One fine body&hellip;</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+        </div>
+      </ng-template>
+
+      <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
+    </ba-card>
+  </div>
+</div>

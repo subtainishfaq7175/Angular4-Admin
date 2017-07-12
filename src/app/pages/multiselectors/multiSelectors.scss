@@ -1,0 +1,32 @@
+.star {
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  color: #d3d3d3;
+}
+
+.star1 {
+  font-size: 2rem;
+  color: #b0c4de;
+}
+.filled {
+  color: #2b542c;;
+}
+
+.full {
+  color: red;
+}
+.half {
+  position: absolute;
+  display: inline-block;
+  overflow: hidden;
+  color: red;
+}
+
+.dark-modal .modal-content {
+  background-color: #292b2c;
+  color: white;
+}
+.dark-modal .close {
+  color: white;
+}

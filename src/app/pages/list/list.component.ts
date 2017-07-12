@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
 })
 
 export class ListComponent {
-
-  constructor() {
+  bar = 40;
+    constructor() {
   }
 
 }

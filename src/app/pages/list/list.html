@@ -1,40 +1,19 @@
-<div class="row">
-  <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12"
-           title="List" baCardClass="traffic-panel medium-card">
-  </ba-card>
-
-  <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12"
-           title="List 2" baCardClass="medium-card">
-  </ba-card>
-</div>
 
 <div class="row">
-  <div class="col-xlg-9 col-xl-6 col-lg-6  col-md-12 col-sm-12 col-12">
-    <div class="row">
-      <ba-card class="col-xlg-8 col-xl-12 col-lg-12 col-md-7 col-sm-12 col-12"
-               title="other one" baCardClass="medium-card">
-
-      </ba-card>
-      <ba-card class="col-xlg-4 col-xl-12 col-lg-12 col-md-5 col-sm-12 col-12"
-               baCardClass="popular-app medium-card">
-
-      </ba-card>
-    </div>
-  </div>
-
-  <div class="col-xlg-3 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-    <ba-card title="Title"
+  <div class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12">
+    <ba-card title="List"
              baCardClass="large-card with-scroll feed-panel">
       <feed></feed>
     </ba-card>
   </div>
+  <div class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12">
+    <ba-card title="Progress Bars"
+             baCardClass="large-card with-scroll feed-panel">
+      <p><ngb-progressbar type="success" [value]="bar"></ngb-progressbar></p>
+      <p><ngb-progressbar type="info" [value]="50"></ngb-progressbar></p>
+      <p><ngb-progressbar type="warning" [value]="75" [striped]="true" [animated]="true"><i>50%</i></ngb-progressbar></p>
+      <p><ngb-progressbar type="danger" [value]="100" [striped]="true">Completed!</ngb-progressbar></p>
+    </ba-card>
+  </div>
 </div>
-<div class="row shift-up">
-  <ba-card class="col-xlg-3 col-lg-6 col-md-12 col-sm-12 col-12" title="list"
-           baCardClass="xmedium-card feed-comply-panel with-scroll todo-panel">
-  </ba-card>
-  <ba-card class="col-xlg-6 col-lg-6 col-md-12 col-sm-12 col-12" title="list"
-           baCardClass="xmedium-card feed-comply-panel with-scroll calendar-panel">
 
-  </ba-card>
-</div>

@@ -10,7 +10,7 @@ import {ChartistJsService} from './chartistJs.service';
 
 export class ChartistJs {
 
-  data:any;
+  data: any;
 
   constructor(private _chartistJsService:ChartistJsService) {
   }

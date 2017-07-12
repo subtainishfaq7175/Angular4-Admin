@@ -390,8 +390,8 @@ export const PAGES_MENU = [
         path: 'multiselectors',
         data: {
           menu: {
-            title: 'Multiselectors',
-            icon: 'ion-ios-albums-outline',
+            title: 'Ratings',
+            icon: 'ion-ios-star-outline',
             selected: false,
             expanded: false,
             order: 0,

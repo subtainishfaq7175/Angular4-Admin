@@ -342,7 +342,7 @@ export const PAGES_MENU = [
         path: 'lists',
         data: {
           menu: {
-            title: 'general.menu.lists',
+            title: 'Lists',
             icon: 'ion-android-list',
             selected: false,
             expanded: false,

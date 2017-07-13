@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 
 @Component({
@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.scss'],
 })
 export class LoginComponent {
-
+  @Input() name: string;
+  @Input() age: number;
   constructor() {
   }
 }

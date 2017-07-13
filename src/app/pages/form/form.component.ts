@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.scss'],
 })
 export class FormComponent {
-
+  name;
+  age;
   constructor() {}
 
 }

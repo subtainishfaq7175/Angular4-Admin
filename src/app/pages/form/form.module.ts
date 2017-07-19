@@ -11,6 +11,7 @@ import { routing } from './form.routing';
 import { LoginComponent } from './login/login.component';
 import { CommitComponent } from './commit/commit.component';
 import { RegisterComponent } from './register/register.component';
+import { CardComponent } from './card/card.component';
 
 
 @NgModule({
@@ -25,6 +26,7 @@ import { RegisterComponent } from './register/register.component';
     FormComponent,
     CommitComponent,
     LoginComponent,
+    CardComponent,
     RegisterComponent,
 
   ],

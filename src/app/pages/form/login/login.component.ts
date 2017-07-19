@@ -9,6 +9,7 @@ import { Component, Input } from '@angular/core';
 export class LoginComponent {
   @Input() name: string;
   @Input() age: number;
+  @Input() loginCardClass: number;
   constructor() {
   }
 }

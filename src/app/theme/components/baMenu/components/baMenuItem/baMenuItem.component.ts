@@ -7,7 +7,7 @@ import {Component, Input, Output, EventEmitter} from '@angular/core';
 })
 export class BaMenuItem {
 
-  @Input() menuItem:any;
+  @Input() menuItem: any;
   @Input() child:boolean = false;
 
   @Output() itemHover = new EventEmitter<any>();

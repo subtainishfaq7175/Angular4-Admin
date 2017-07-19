@@ -18,5 +18,9 @@ export class DropDownComponent {
     configg.size = 'sm';
     configg.boundaryLinks = true;
   }
-
+  foods = [
+    { value: 'steak-0', viewValue: 'Steak' },
+    { value: 'pizza-1', viewValue: 'Pizza' },
+    { value: 'tacos-2', viewValue: 'Tacos' },
+  ];
 }

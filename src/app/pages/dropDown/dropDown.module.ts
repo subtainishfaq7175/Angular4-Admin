@@ -4,9 +4,11 @@ import { FormsModule } from '@angular/forms';
 import { NgaModule } from '../../theme/nga.module';
 import { DropDownComponent } from './dropDown.component';
 import { NgbDropdownModule, NgbModalModule, NgbAccordionModule, NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+import { MdSelectModule } from '@angular/material';
+
 
 import { routing } from './dropDown.routing';
-import { DropDwon1 } from './dropDown1/dropDwon1.component';
+import { VBDropDwonComponent } from './dropDown1/dropDwon1.component';
 import { DropDwon2 } from './dropDwon2/dropDwon2.component';
 
 
@@ -20,11 +22,12 @@ import { DropDwon2 } from './dropDwon2/dropDwon2.component';
     NgbAccordionModule,
     NgbPaginationModule,
     routing,
+    MdSelectModule,
   ],
   declarations: [
     DropDownComponent,
     DropDwon2,
-    DropDwon1,
+    VBDropDwonComponent,
 
   ],
   providers: [

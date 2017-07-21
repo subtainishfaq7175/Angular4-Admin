@@ -10,11 +10,12 @@ import { MdSelectModule } from '@angular/material';
 import { routing } from './dropDown.routing';
 import { VBDropDwonComponent } from './dropDown1/dropDwon1.component';
 import { DropDwon2 } from './dropDwon2/dropDwon2.component';
-
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   imports: [
     CommonModule,
+    NgbModule,
     FormsModule,
     NgbDropdownModule,
     NgbModalModule,

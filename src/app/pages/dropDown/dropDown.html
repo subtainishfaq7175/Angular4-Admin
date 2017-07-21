@@ -2,13 +2,10 @@
   <div class="row">
     <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12"
              title="Button Drop Down">
-        <app-vb-dropDwon [optionItem]="foods"></app-vb-dropDwon>
+        <vb-select (onChanges)="onChanges($event)" [optionItem]="foods" vbValue="id" vbViewValue="name"></vb-select>
     </ba-card>
     <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12"
              title="Drop Down & Pagination"  baCardClass="with-scroll">
-      <dropDwon2></dropDwon2>
-      <br>
-      <br>
       <p>This pagination uses custom default values</p>
       <ngb-pagination [collectionSize]="70" [(page)]="page"></ngb-pagination>
     </ba-card>
@@ -75,5 +72,10 @@
         <button class="btn btn-sm btn-outline-primary" (click)="acc.toggle('toggle-2')">Toggle second</button>
       </p>
     </ba-card>
+  </div>
+  <div class="row">
+      <ba-card class="col-md-12" title="VB Grid Component">
+        <vb-grid [gridData]="foods" [fieldsData]="fields" [titleData] = "titles" tableHeight="200"></vb-grid>
+      </ba-card>
   </div>
 </div>

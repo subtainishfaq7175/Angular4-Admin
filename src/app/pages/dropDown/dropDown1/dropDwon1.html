@@ -186,8 +186,7 @@
 
 
 <div class="form-group">
-  <select>
-    <option *ngFor="let item of optionItem" value = "{{item.value}}"> {{item.viewValue}}</option>
+  <select (change)="onChange($event.target.value)">
+    <option *ngFor="let item of optionItem" value = "{{item[vbValue]}}"> {{item[vbViewValue]}}</option>
   </select>
-
 </div>
